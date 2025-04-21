@@ -1,0 +1,254 @@
+/* 
+estilos para el header, esta dividio en las siguientes partes:
+1. contenedor principal
+2. contenedor de logo
+3. contenedor de menu de navegacion
+4. contenedor de boton de menu hamburguesa
+5. contenedor de menu desplegable
+5. contenedor de boton de modo oscuro
+6. medias queries para diferentes pantallas
+*/
+
+
+.Header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 15%;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* gap: 1rem; */
+    z-index: 9;
+}
+
+.Header-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-left: 1.5rem;
+    width: 15rem;
+    ;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.Header-logoImg {
+    min-width: 20%;
+    max-width: 45%;
+    height: 100%;
+
+}
+
+.Header-logoImg:hover {
+    scale: 1.05;
+}
+
+.Header-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Header-navList {
+    width: 77%;
+    list-style: none;
+    display: none;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header-navLink {
+    text-decoration: none;
+    font-family: road-rage;
+    letter-spacing: 5px;
+    color: var(--color-white);
+    font-size: clamp(1rem, 1.4rem, 1.8rem);
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+    text-shadow: 1px 1px 1px black;
+}
+
+.Header-navLink:hover {
+    cursor: pointer;
+    border-bottom: solid 2px var(--color-white);
+
+}
+
+.open {
+
+    /* display: none; */
+    font-size: 1rem;
+    text-align: center;
+}
+
+.close {
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.Header-navBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: auto;
+    right: 8%;
+    width: 40px;
+    height: 30px;
+    background-color: var(--color-white);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.Header-navBtn:hover {
+    scale: 1.05;
+}
+
+
+.Header-navMenu {
+
+    list-style: none;
+    position: absolute;
+    top: 90%;
+    right: 0%;
+    padding: 20px 5px 30px 5px;
+    width: 100%;
+    border: solid 2px;
+    border-radius: 8px;
+    background-color: var(--color-tertiary);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    z-index: 999;
+
+
+
+}
+
+.Header-navMenu li a {
+    /* padding: 5px; */
+    text-decoration: none;
+    font-family: "road-rage", cursive;
+    letter-spacing: 5px;
+    color: var(--color-secondary);
+    font-size: clamp(0.58rem, 1rem, 1.7rem);
+    font-weight: bold;
+    /* transition: all 0.5s ease-in-out; */
+}
+
+.Header-navMenu li a:hover {
+    cursor: pointer;
+    border-bottom: solid 2px var(--color-secondary);
+}
+
+
+
+.open.isActive,
+.close.isActive {
+    position: absolute;
+    display: flex;
+
+}
+
+.Header-darkMode {
+    /* position: absolute; */
+    /* top: 10px;
+    left: 50%; */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 0px 5px var(--color-black);
+    z-index: 9;
+}
+
+.Header-darkMode i {
+    font-size: 1.2rem;
+    color: var(--color-black);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.Header-darkMode i.fa-sun {
+    color: var(--color-primary);
+}
+
+
+@media (min-width:1175px) and (orientation: landscape) {
+
+    .Header-navList {
+        display: flex;
+    }
+
+    .Header-navLink {
+        font-size: 1.7rem;
+        letter-spacing: 8px;
+    }
+
+    .Header-navMenu {
+        top: 67%;
+        right: 2.5%;
+        max-width: 16%;
+    }
+
+    .Header-navBtn {
+        width: 50px;
+        height: 35px;
+    }
+
+    .Header-navMenu--oculto {
+        display: none;
+    }
+
+    .Header-navMenu li {
+        margin-top: 20px;
+    }
+
+
+}
+
+
+@media (min-width:760px) and (max-width:1175px) {
+
+    .Header-navList {
+        display: flex;
+    }
+
+    .Header-navLink {
+        font-size: 1rem
+    }
+
+    .Header-navMenu {
+        top: 65%;
+        right: 2.5%;
+        max-width: 27%;
+    }
+
+    .Header-navBtn {
+        width: 45px;
+        height: 32px;
+    }
+
+    .Header-navMenu--oculto {
+        display: none;
+    }
+
+
+}

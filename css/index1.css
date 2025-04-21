@@ -1,0 +1,633 @@
+/* 
+estilos para la pagina principal, esta dividio en las siguientes partes:
+1. contenedor principal
+2. contenedor de la seccion del hero
+3. contenedor de la seccion de noticias
+4. conenedor de la seccion para destacados
+5. contenedor de la seccion del formulario
+cada seccion contiene sus respectivos medias queries 
+*/
+
+
+
+.Body {
+  overflow-x: hidden;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-fondo);
+
+  width: 100%;
+  gap: 1.25rem;
+  flex-grow: 1;
+}
+
+
+
+/*---------------------------------------------------------------------*/
+/*------------------------ SECCION DEL HERO ---------------------------*/
+/*---------------------------------------------------------------------*/
+
+.Section1 {
+  width: 100vw;
+  height: 87vh;
+  /* estilos para la imagen que ocupa toda la pantalla (hero) */
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)60%, rgb(0, 0, 0) 100%), url(/img/hero-goku.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(184, 184, 184, 0.5);
+  background-blend-mode: darken;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Section1-title {
+  width: 100%;
+  padding: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 3rem;
+  font-family: "road-rage";
+  font-size: 2rem;
+
+  text-align: center;
+
+  text-shadow: 0px 0px 5px rgba(0, 0, 0);
+  letter-spacing: 10px;
+  color: var(--color-primary);
+}
+
+.Section1-text {
+
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 17rem;
+  font-size: clamp(1rem, 3rem, 1.8rem);
+  font-family: cursive;
+  font-weight: bold;
+  text-shadow: 0 0 10px white;
+  text-align: center;
+}
+
+
+/*---------------------------------------------------------------------*/
+/*------------------------ SECCION DEL NOTICIAS -----------------------*/
+/*---------------------------------------------------------------------*/
+
+.Section2 {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+
+  /* box-shadow: 0px 0px 20px  var(--color-black); */
+  color: var(--color-black);
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.Section2-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 13px;
+  
+  font-size: 1rem;
+  font-family: "road-rage";
+  color: var(--color-primary);
+  background-color: var(--color-black);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  z-index: 8;
+
+}
+
+.Section2-title span {
+
+  animation: movimiento 6s linear infinite;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translateX(-500%);
+  }
+
+  100% {
+    transform: translateX(500%);
+  }
+
+}
+
+.Section2-carrusel {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.Carrusel-item {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.Carrusel-item--active {
+  display: flex;
+
+
+}
+
+
+.Carrusel-itemImg {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  object-fit: cover;
+
+
+}
+
+.Carrusel-itemContent {
+
+  background-color: rgba(0, 37, 68, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+
+}
+
+.Carrusel-itemTitle {
+  font-family: crotah;
+  font-size: clamp(1.5rem, 1rem, 1.8rem);
+  color: var(--color-white);
+  text-shadow: 1px 1px 5px rgb(15, 15, 15);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.Carrusel-itemText {
+  font-family: cursive;
+  font-size: clamp(1rem, 0.5rem, 1.5rem);
+  text-align: justify;
+  color: var(--color-white);
+}
+
+/* botones de flechas */
+.Carrusel-btn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--color-black);
+  /* font-size: 2rem; */
+  font-size: 2rem;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.Carrusel-btn-atras {
+  left: 5px;
+}
+
+.Carrusel-btn-siguiente {
+  right: 5px;
+}
+
+.Carrusel-btn:hover {
+  color: var(--color-black);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Carrusel-btn:active {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  scale: 0.95;
+}
+
+/* circulos para indicar noticia */
+.Carrusel-circulos {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.Circulo {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: rgba(26, 26, 26, 0.7);
+  cursor: pointer;
+}
+
+.Circulo--active {
+  background-color: var(--color-primary);
+}
+
+/* respopnsive de la seccion de noticias */
+@media (min-width:768px) {
+  .Section2 {
+    height: 70vh;
+  }
+
+  .Section2-carrusel {
+    padding: 1rem;
+  }
+
+  .Section2-title {
+    font-size: 1.5rem;
+  }
+
+  .Carrusel-item {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Carrusel-itemImg {
+    width: 55%;
+    height: 90%;
+    border-radius: 10px;
+  }
+
+  .Carrusel-itemContent {
+
+    width: 40%;
+    height: auto;
+    text-align: center;
+  }
+
+  .Carrusel-itemTitle {
+    font-size: 1rem;
+  }
+
+  .Carrusel-itemText {
+    font-size: 0.8rem;
+  }
+
+  .Carrusel-btn {
+    display: flex;
+  }
+
+  .Carrusel-circulos {
+    display: flex;
+  }
+}
+
+@media (min-width:1080px) {
+  .Section2 {
+    height: 80vh;
+  }
+
+  .Section2-title {
+    font-size: 2rem;
+
+  }
+
+  .Section2-carrusel {
+    padding: 1rem;
+  }
+
+  .Carrusel-itemImg {
+    width: 65%;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: scale-down;
+  }
+
+  .Carrusel-itemContent {
+    max-width: 30%;
+    height: auto;
+
+    text-align: left;
+  }
+
+  .Carrusel-itemTitle {
+    font-size: 2rem;
+  }
+
+  .Carrusel-itemText {
+    font-size: 1.2rem;
+  }
+
+  .Carrusel-btn {
+    display: flex;
+  }
+
+  .Carrusel-circulos {
+    display: flex;
+  }
+
+  .Section2-title span {
+
+    animation: movimiento 9s linear infinite;
+  }
+
+
+  @keyframes movimiento {
+    0% {
+      transform: translateX(-1500%);
+    }
+
+    100% {
+      transform: translateX(1200%);
+    }
+
+  }
+}
+
+/*---------------------------------------------------------------------*/
+/*------------------------ SECCION DE DESTACADOS ----------------------*/
+/*---------------------------------------------------------------------*/
+.Contain-destacados{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  
+  
+}
+.Contain-title{
+  width: 100%;
+  padding: 0.625rem;
+  font-size: 2.5rem;
+  font-family: road-rage;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 1px var(--color-primary);
+  text-align: center;
+  color: var(--color-black);
+}
+
+.Destacados {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 10px;
+  margin-bottom: 1.5rem;
+ 
+}
+
+.Destacados-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  border-radius: var(--border-radius);
+  /* overflow: hidden; */
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  
+}
+
+.Destacados-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0px 10px var(--color-primary);
+}
+
+.Destacados-contain {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.01);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.Destacados-card:hover .Destacados-contain {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.Destacados-contain h2 {
+  font-family: "crotah", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 0 8px white;
+}
+
+.Destacados-contain p {
+  border-radius: 8px;
+  width: 100%;
+  background-color: rgba(75, 78, 90, 0.3);
+  font-family: "roboto", sans-serif;
+  font-size: 1.2rem;
+  color: var(--color-white);
+  margin-bottom: 1rem;
+    text-shadow: 0 0 10px var(--color-secondary);
+
+}
+
+.Destacados-btn {
+  font-size: 1rem;
+  font-family: "roboto", sans-serif;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  transition: background-color 0.3s ease;
+}
+
+.Destacados-btn:hover {
+  background-color: var(--color-tertiary);
+}
+
+/* Media Query para pantallas medianas y grandes */
+@media (min-width: 768px) {
+  .Destacados {
+    padding: 16px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    height: 40vh;
+    margin-bottom: 2rem;
+
+  }
+  .Destacados-card {
+    height: 100%;
+  }
+}
+
+/*---------------------------------------------------------------------*/
+/*------------------------ SECCION DEL FORMULARIO ---------------------*/
+/*---------------------------------------------------------------------*/
+
+.Section {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.25rem;
+  /* overflow-x: hidden; */
+}
+
+.Section-titleForm {
+  max-width: 100%;
+  padding: 0.625rem;
+  font-size: clamp(1rem, 1.7rem, 2rem);
+  font-family: road-rage;
+  letter-spacing: 5px;
+  text-shadow: 0 1px 1px var(--color-primary);
+  text-align: center;
+  color: var(--color-black);
+}
+
+.Form {
+  max-width: 100%;
+  padding: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+
+
+}
+
+.Form-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "crotah", cursive;
+  font-size: clamp(0.7rem, 1rem, 1.5rem);
+  color: var(--color-black);
+}
+
+.Form-input {
+  outline: none;
+  border: none;
+  border-bottom: solid 2px var(--color-tertiary);
+  ;
+  transition: border 0.3s ease;
+  font-family: cursive;
+  font-size: clamp(0.7rem, 1rem, 1.5rem);
+}
+
+.Form-input:focus {
+  border-bottom: solid 2px var(--color-secondary);
+}
+
+.Form-textCheck {
+  font-family: cursive;
+  font-size: clamp(0.7rem, 1rem, 1.5rem);
+}
+
+.Form-textCheck a {
+  text-decoration: none;
+  color: var(--color-black);
+}
+
+.Form-textCheck a:hover {
+  color: var(--color-secondary);
+}
+
+.Div-repeatPassword {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+
+}
+
+.Form-inputRepeatPassword {
+  width: 50%;
+}
+
+.Btn-password {
+  padding: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: auto;
+  font-size: 1rem;
+  background-color: var(--color-black);
+  text-shadow: 0 0 5px var(--color-fondo);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Btn-submit {
+  width: 30%;
+  height: auto;
+  border: none;
+  background-color: var(--color-tertiary);
+
+  padding: 0.5rem;
+  font-size: clamp(0.7rem, 1rem, 1.5rem);
+  font-family: cursive;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0px 2px 5px black;
+
+}
+
+/* Que los colores se intercambien al pasar el raton */
+.Btn-submit:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-tertiary);
+  cursor: pointer;
+}
+
+/* Que tenga un pequeño efecto de reduccion al hacer click */
+.Btn-submit:active,
+.Btn-password:active {
+  scale: 0.95;
+}
+
+@media (min-width:1080px) and (orientation: landscape) {
+  .Section-titleForm {
+    font-size: 2.5rem;
+  }
+
+  /* queria que se viera un poco mas grande así que use el "*" para que afecte a todos los elementos  */
+  .Form * {
+    /* width: 100%; */
+    font-size: 1.5rem;
+  }
+}

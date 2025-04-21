@@ -1,0 +1,220 @@
+/* 
+estilos para el footer, esta dividio en las siguientes partes:
+1. contenedor principal
+2. contenedor de redes sociales e informacion legal
+3. contenedor de esferas
+4. medias queries para diferentes pantallas
+*/
+
+
+
+
+/* Clases para todo mi contendor */
+.Footer {
+  width: 100%;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+/* Clases para el contenedor de redes sociales e informacion legal */
+.Footer-content {
+  width: 100%;
+  padding: 10px;
+  /*border: solid white;*/
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-grow: 1; */
+}
+
+.Footer-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  gap: 35px;
+  /* flex-grow: 1; */
+  background-color: rgb(241, 177, 56);
+  border-radius: 8px;
+  box-shadow: 10px 10px 15px black;
+}
+
+.Footer-redesTitle,
+.Footer-contentTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: clamp(1.2rem, 1.7rem, 2.2rem);
+  font-family: cursive;
+  color: var(--color-secondary);
+  text-shadow: 1px 1px 2px white;
+}
+
+.Footer-redesList,
+.Footer-contentList {
+  list-style: none;
+}
+
+.Footer-redesItem,
+.Footer-contentItem {
+  margin-bottom: 20px;
+}
+
+.Footer-redesLink,
+.Footer-contentLink {
+  text-decoration: none;
+  font-family: cursive;
+  font-size: clamp(0.8rem, 1.6rem, 1.8rem);
+  color: var(--color-secondary);
+}
+
+.Footer-redesLink:hover,
+.Footer-contentLink:hover {
+  /* text-decoration: underline 2px; */
+  border-bottom: solid 2px;
+}
+
+.Footer-contentLegal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 60%;
+  gap: 35px;
+  flex-grow: 1;
+  background-color: var(--color-tertiary);
+  border-radius: 8px;
+  box-shadow: 10px 10px 15px black;
+}
+
+
+
+/* Clases para el contenedor de esferas */
+.Footer-esferas {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.Footer-esferasImg {
+  min-width: 25px;
+  min-height: 25px;
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 50%;
+}
+
+.Footer-esferas .Footer-esferasImg {
+  animation: destellos 3s infinite;
+  cursor: pointer;
+}
+
+@keyframes destellos {
+  0% {
+    box-shadow: 0 0 10px orange;
+  }
+
+  30% {
+    box-shadow: 0 0 20px lightblue;
+  }
+
+  60% {
+    box-shadow: 0 0 20px yellow;
+  }
+
+  100% {
+    box-shadow: 0 0 10px orange;
+
+
+  }
+
+}
+
+
+@media (min-width:1080px) and (orientation: landscape) {
+
+
+  .Footer-content {
+    margin: 20px 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .Footer-contentLegal,
+  .Footer-redes {
+    padding: 10px;
+    min-width: 340px;
+    max-width: 500px;
+    height: 100%;
+
+  }
+
+  .Footer-redesTitle,
+  .Footer-contentTitle {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
+  .Footer-redesLink,
+  .Footer-contentLink {
+    font-size: 1.5rem;
+  }
+
+  .Footer-esferas {
+    justify-content: space-between;
+    padding: 20px;
+  }
+}
+
+
+@media (min-width:760px) and (max-width:1080px) {
+
+
+  .Footer-content {
+    width: 90%;
+    height: 80%;
+    margin: 20px 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+
+  .Footer-contentLegal,
+  .Footer-redes {
+    min-width: 200px;
+    max-width: 350px;
+  }
+
+  .Footer-redesTitle,
+  .Footer-contentTitle {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+
+  .Footer-redesLink,
+  .Footer-contentLink {
+    font-size: 1.2rem;
+  }
+
+  .Footer-redesItem,
+  .Footer-contentItem {
+    margin-bottom: 15px;
+  }
+
+}

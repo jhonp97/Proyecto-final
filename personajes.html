@@ -1,0 +1,339 @@
+<!-- 
+ Esta es la pagina para la visualizacionn de los personajes, la cual contiene:
+- El Header 
+- El Main como contenido principal
+    - la seccion de personajes, que es una cuadricula de imagenes.
+    - un Div que sería el Lightbox para mostrar la imagen ampliada y su descripcion.
+        - dentro tenemos el icono para cerrar el lightbox y el contenedor de la imagen ampliada con su titulo y  su descripcion.
+- El Footer   -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Dragon Ball || Personajes</title>
+    <link rel="icon" type="image/png" href="./img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- libreria de iconos -->
+    
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/personajes.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="./js/loadHeaderFooter.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/personajes.js" defer></script>
+</head>
+
+<body class="Body">
+    <header>
+        <div id="header"></div>
+    </header>
+    <h1 class="Pj-title">Personajes</h1>
+    <main class="Main" id="main">
+        
+        
+        <!-- seccion de personajes -->
+        <section class="Main-grid" id="Main-grid">
+
+            
+            <!-- Goku -->
+            <img src="./img/personajesDb/Goku/gokuNiño.png" alt="Goku Niño" loading="lazy" class="Main-grid--img"
+                data-description="“Goku Niño” muestra al joven Goku en sus inicios en la Tierra, aún con una inocencia viva pero sin saber que dentro de él se esconde un potencial extraordinario. La imagen destaca su curiosidad y energía incontrolable, elementos que presagian la grandeza y la transformación que marcarán su destino como el guerrero que cambiará la historia de la lucha.">
+
+            <img src="./img/personajesDb/Goku/gokuAdulto.png" alt="Goku Adulto" loading="lazy" class="Main-grid--img"
+                data-description="El sayayin de clase baja criado en la tierra, tambien llamado Kakaroto. Un guerrero ya forjado por años de entrenamiento y batallas intensas. Su rostro, marcado por la experiencia, refleja determinación y serenidad. Esta versión encarna la madurez del luchador, capaz de enfrentar amenazas con firmeza y un espíritu inquebrantable.">
+
+            <img src="./img/personajesDb/Goku/gokuSS1.png" alt="Goku Super Saiyan 1" loading="lazy"
+                class="Main-grid--img"
+                data-description="La primera transformación de Goku en Super Saiyan, un hito que marcó un antes y un después en la serie. Su cabello dorado y su aura brillante simbolizan el despertar de su verdadero poder. Esta imagen captura la esencia de la lucha y la determinación que lo llevaron a alcanzar este nivel de fuerza tras la muerte de su amigo Krillin a manos de Freezer.">
+
+            <img src="./img/PersonajesDb/Goku/gokuSS2.png" alt="Goku Super Saiyan 2" loading="lazy"
+                class="Main-grid--img"
+                data-description="La segunda transformación de Goku, el Super Saiyan 2 se intensifica la fuerza y la energía: el cabello se vuelve aún más definido y la electricidad ambiental resalta en su aura. Esta forma representa un salto evolutivo, con mayor velocidad y poder, y marca el momento en que Goku se enfrenta a desafíos cada vez más abrumadores..">
+
+            <img src="./img/PersonajesDb/Goku/gokuSS3.png" alt="Goku Super Saiyan 3" loading="lazy"
+                class="Main-grid--img"
+                data-description="Goku rompe barreras: su cabello se alarga desproporcionadamente, sus cejas desaparecen y su energía adquiere un aspecto salvajemente descontrolado. La imagen transmite la intensidad y el sacrificio físico que conlleva esta forma, demostrando que para alcanzar niveles extremos de poder, el guerrero debe asumir grandes riesgos ya que es una transformación que consume mucha energia">
+
+            <img src="./img/PersonajesDb/Goku/GokuSS4.webp" alt="Goku Super Saiyan 4" loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Goku en Super Saiyan 4 fusiona lo salvaje con lo ancestral: su aspecto regresa a raíces más animales, con rasgos que rememoran la naturaleza primitiva de los Saiyan. Esta es la transformación canonica vista en la serie de Dragon Ball Daima que consigue durante su pelea contra el Rey de los demonios Gomah">
+
+            <img src="./img/PersonajesDb/Goku/GokuDios.png" alt="Goku Super Saiyan Dios" loading="lazy"
+                class="Main-grid--img"
+                data-description="En esta forma, Goku se envuelve en una mística aura roja: “Goku Super Saiyan Dios” es una transformación espiritual que trasciende lo físico. La imagen muestra a un Goku sereno y concentrado, en el que la energía divina se mezcla con la fuerza combativa, marcando su ascenso a un nivel de poder casi celestial. Alcanzada mediante un ritual de Saiyan`s para poder dar un poco de batalla al Dios de la destruccion Bills">
+
+            <img src="./img/PersonajesDb/Goku/gokuBlue.png" alt="Goku Super Saiyan Blue" loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Goku en Super Saiyan Blue combina la fuerza del Super Saiyan Dios con el poder de un Super Saiyan. Su cabello azul y su aura brillante simbolizan la maestría y el control absoluto sobre su energía. Esta forma representa la culminación de su entrenamiento y su capacidad para enfrentar a los enemigos más poderosos del universo.">
+
+            <img src="./img/PersonajesDb/Goku/gokuUltraInstinto.png" alt="Goku Ultra Instinto" loading="lazy"
+                class="Main-grid--img"
+                data-description="El Ultra Instinto es una técnica divina, encarna el ideal de perfección en el combate: la mente y el cuerpo actúan sin interferencias conscientes. La imagen muestra a Goku con una expresividad serena y movimientos que parecen surgir de un estado casi espiritual, permitiéndole reaccionar instintivamente ante cualquier ataque.">
+
+            <img src="./img/PersonajesDb/Goku/GokuUICompleto.png" alt="Goku Ultra Instinto Dominado" loading="lazy"
+                class="Main-grid--img"
+                data-description="El Ultra Instinto Dominado es la culminación del entrenamiento de Goku, donde ha logrado controlar completamente esta técnica divina. Su cabello plateado y su aura brillante reflejan su maestría en el combate. Esta forma representa el equilibrio perfecto entre mente y cuerpo, permitiéndole anticipar y reaccionar a los ataques de sus oponentes con una precisión asombrosa.">
+
+            <!-- Vegeta -->
+            <img src="./img/PersonajesDb/Vegeta/vegetaJoven.png" alt="Vegeta Joven" loading="lazy"
+                class="Main-grid--img"
+                data-description="El príncipe de los Saiyan, Vegeta, en su juventud, muestra una mezcla de arrogancia y determinación. En esta epoca es cuando va a la tierra a pelear contra Goku, siendo el antagonista principal de la saga de los Saiyan`s">
+
+            <img src="./img/PersonajesDb/Vegeta/vegeta.png" alt="Vegeta Adulto" loading="lazy" class="Main-grid--img"
+                data-description="Vegeta, un guerrero maduro y endurecido por las batallas, con cicatrices que cuentan historias de sacrificio y superación. El puente entre el orgullo inicial y una sabiduría adquirida a base de entrenamiento y duras lecciones, esta forma refleja la evolución interna y la grandeza personal que ha forjado su carácter.">
+
+            <img src="./img/PersonajesDb/Vegeta/vegetaSS.png" alt="Vegeta Super Saiyan " loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Vegeta en Super Saiyan es un símbolo de su lucha interna y su deseo de superar a Goku. Su cabello dorado y su aura intensa reflejan su determinación y poder. Esta forma representa el orgullo Saiyan y la búsqueda constante de la fuerza, mostrando a Vegeta en su máxima expresión de combate.">
+
+            <img src="./img/PersonajesDb/Vegeta/majin-vegeta.png" alt="Majin Vegeta" loading="lazy"
+                class="Main-grid--img"
+                data-description="Majin Vegeta es la forma malvada y más poderosa de Vegeta, después de que este en su ansia de igualar su poder al de Goku, se dejará manipular por Babidi consciente de ello. Con ello consiguió desbloquear ese pequeño nivel de poder que le faltaba y consiguió ser mucho más poderoso.">
+
+            <img src="./img/PersonajesDb/Vegeta/vegetaSS3.png" alt="Vegeta Super Saiyan 3" loading="lazy"
+                class="Main-grid--img"
+                data-description="El diseño de esta transformación es ligeramente diferente a la vista anteriormente en Goku o Gotenks. Tanto es así, que Vegeta hace gala de una melena rubia más corta y erguida a lo que estamos acostumbrados en Dragon Ball Z, donde Goku y Gotenks lucían una melena mucho más larga a lo largo de sus espaldas. Se puede pensar que esto es así ya que el creador de la obra Akira Toriyama tenia bocetos muy parecidos a este diseño, pero nunca se llegaron a usar en la serie.">
+
+            <img src="./img/PersonajesDb/Vegeta/vegetaSS4.png" alt="Vegeta Super Saiyan 4" loading="lazy"
+                class="Main-grid--img"
+                data-description="Vegeta obtiene la transformación luego de pasar por el estado de Mono Gigantesco Dorado, gracias al Generador de Rayos Bruits de Bulma. Aparece por primera vez cuando decide ayudar a Goku a luchar contra Yi Xing Long, Goku lo ayudaría finalmente para que alcance la transformación. Obtiene un pelaje de color rojo por todo el cuerpo a excepción del rostro y pecho y su cabello se vuelve de color marrón con un estilo despeinado y primitivo.">
+
+            <img src="./img/PersonajesDb/Vegeta/vegetaDios.png" alt="Vegeta Super Saiyan Dios" loading="lazy"
+                class="Main-grid--img"
+                data-description="Esta forma es obtenida por Vegeta mediante entrenamiento (según la continuidad de las películas y el manga). En este estado, Vegeta se ve más delgado, con una coloración roja en los ojos, cejas y cabello. En el manga de Dragon Ball Super, durante la lucha contra Goku Black y Zamas, Vegeta presenta por primera vez la cualidad de transformarse en un Super Saiyan Dios a voluntad, al igual que Goku.">
+
+            <img src="./img/PersonajesDb/Vegeta/vegetaBlue.png" alt="Vegeta Super Saiyan Blue" loading="lazy"
+                class="Main-grid--img"
+                data-description="“Vegeta Super Saiyan Blue” muestra al guerrero en pleno equilibrio entre agresividad y paciencia. Con un aura azul penetrante, la imagen simboliza la fusión de fuerza y técnica, demostrando que Vegeta ha aprendido a dominar su poder para combatir de manera eficiente y letal.">
+
+            <img src="./img/PersonajesDb/Vegeta/vegetaUltraEgo.png" alt="Vegeta Ultra Ego" loading="lazy"
+                class="Main-grid--img"
+                data-description="Esta transformación es realmente un estado obtenido por aquellos que siguen las enseñanzas de los dioses de la destrucción, y es una contraparte del Ultra Instinto de los ángeles. Después de un entrenamiento con Bills, Vegeta despierta esta transformación durante su lucha contra Granolah. La transformación le otorga un máximo poder destructivo, capaz de utilizar la energía de Destrucción sin ningún problema, pero al costo de que el usuario debe recibir todo ataque en su contra para obtener el poder de destrucción.">
+
+
+            <!-- Gohan -->
+            <img src="./img/PersonajesDb/Gohan/gohanJoven.png" alt="Gohan Joven" loading="lazy" class="Main-grid--img"
+                data-description="Gohan, el hijo de Goku, en su infancia es un niño inocente y curioso, pero con un potencial oculto que lo convierte en uno de los guerreros más poderosos. Su imagen refleja la dualidad de su naturaleza: la ternura de un niño y la fuerza latente de un Saiyan.">
+
+            <img src="./img/PersonajesDb/Gohan/gohanSS.png" alt="Gohan Joven Super Saiyan" loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Gohan en Super Saiyan es un momento crucial en su desarrollo como guerrero. Su cabello dorado y su aura intensa simbolizan el despertar de su verdadero poder, mostrando su determinación y fuerza interior para la preparación en su batalla contra Cell.">
+            <img src="./img/PersonajesDb/Gohan/gohanSS2.png" alt="Gohan Joven Super Saiyan 2" loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Gohan en Super Saiyan 2 es un hito en su desarrollo como guerrero. Su cabello se vuelve más erguido y su aura brilla intensamente, simbolizando su ira y determinación. Esta forma representa el momento en que Gohan desata todo su potencial para enfrentarse a Cell, convirtiéndose en uno de los momentos más memorables de la serie.">
+
+            <img src="./img/PersonajesDb/Gohan/gohanDefinitivo.png" alt="Gohan Definitivo " loading="lazy"
+                class="Main-grid--img"
+                data-description="El Kaioshin Anciano lo entrenó para sacar su verdadero potencial mediante un extraño ritual de 25 horas. Cuando Gohan accede a este estado, su poder supera a todas sus transformaciones adquiridas de Supersaiyano. En cuanto a su apariencia, esta no varía mucho ya que su cabello y ojos conservan el mismo color negro que en su estado base; su cabello se ve notable más erizado y el distintivo mechón que le cae en la frente se vuelve más alargado y pronunciado">
+
+            <img src="./img/PersonajesDb/Gohan/GohanDelFuturo.webp" alt="Gohan Del Futuro" loading="lazy"
+                class="Main-grid--img"
+                data-description="Con una mirada endurecida por los conflictos vividos contra los androides #17 y #18, Gohan muestra a un guerrero marcado por la experiencia y la tragedia. La imagen resalta cicatrices tanto en su cuerpo como en su alma, insinuando una batalla constante contra un destino adverso y la voluntad de cambiar un futuro sombrío. ">
+
+            <img src="./img/PersonajesDb/Gohan/GohanDelFuturoSS.png" alt="Gohan Del Futuro Super Saiyan" loading="lazy"
+                class="Main-grid--img"
+                data-description="Esta transformación, única en Gohan , plasma a un Gohan forjado en la adversidad. Su aura intensa y su expresión decidida muestran la reacción desesperada y poderosa ante la adversidad, haciendo evidente que el sacrificio y la furia pueden convertirse en instrumento de redención.">
+
+            <img src="./img/PersonajesDb/Gohan/gohanAdultoSS.png" alt="Gohan Adulto Super Saiyan" loading="lazy"
+                class="Main-grid--img"
+                data-description="se aprecia la madurez de un guerrero que ha aprendido a combinar con eficacia la fuerza bruta con la inteligencia en la lucha. La imagen delinea una transformación vibrante y llena de energía, destacando a un Gohan que, pese a su inclinación pacifista, sabe ponerse en pie cuando la amenaza se vuelve inminente.">
+
+            <img src="./img/PersonajesDb/Gohan/GohanActual.png" alt="Gohan Actual" loading="lazy" class="Main-grid--img"
+                data-description="uno de los personajes principales de los arcos argumentales de Dragon Ball Z, Dragon Ball Super y Dragon Ball GT. Es un mestizo entre saiyan y humano terrícola. Es el primer hijo de Son Goku y Milk, hermano mayor de Son Goten, esposo de Videl y padre de Pan.">
+            <img src="./img/PersonajesDb/Gohan/GohanBestia.png" alt="Gohan Bestia " loading="lazy"
+                class="Main-grid--img"
+                data-description="Es una evolución del Potencial Desatado que alcanza Son Gohan durante su combate contra Cell Max, siendo conocido en este estado como Son Gohan Bestia o Gohan Beast. En este estado, Gohan es capaz de utilizar el Ki de una manera más eficiente, lo que le permite aumentar su fuerza y velocidad a niveles sin precedentes. Su cabello se vuelve más largo y erguido, y su aura se intensifica, reflejando su conexión con la naturaleza y su poder oculto.">
+
+
+            <!-- Piccolo -->
+            <img src="./img/PersonajesDb/Piccolo/piccoloNino.png" alt="Piccolo Niño" loading="lazy"
+                class="Main-grid--img"
+                data-description="El guerrero Namekiano Piccolo, en su infancia, es un ser lleno de potencial y misterio. Su imagen refleja la dualidad de su naturaleza capta al joven Namekiano en una etapa temprana, donde aun se percibe la incipiente sabiduría y el despertar de un poder que, con el tiempo, evolucionará hacia uno de los luchadores más enigmáticos y estratégicos de la Tierra.">
+
+            <img src="./img/PersonajesDb/Piccolo/piccoloDaimaku.png" alt="Piccolo Demonio" loading="lazy"
+                class="Main-grid--img"
+                data-description="El Piccolo Demonio es la forma original de Piccolo, un guerrero poderoso y astuto que busca venganza y dominación. Su imagen refleja la oscuridad y la ambición, con un aura amenazante que simboliza su deseo de conquistar y destruir. Esta forma representa el inicio de su viaje como antagonista en la serie.">
+            <img src="./img/PersonajesDb/Piccolo/piccolo.png" alt="Piccolo " loading="lazy" class="Main-grid--img"
+                data-description="Piccolo demuestra ser analítico y estratégico en la batalla. Aprende rápido de sus errores y utiliza bien todos los recursos a su disposición, lo cual compensa su falta de transformaciones como tienen los saiyans o la Raza de Freezer. Su imagen refleja la sabiduría y la fuerza de un guerrero que ha evolucionado a lo largo de la serie, convirtiéndose en un aliado valioso para Goku y sus amigos.">
+
+            <img src="./img/PersonajesDb/Piccolo/piccoloDespertado.png" alt="Piccolo Poder Latente" loading="lazy"
+                class="Main-grid--img"
+                data-description="El Piccolo Despertado es una forma que representa la evolución de su poder y habilidades. Su imagen muestra un aura intensa y una postura decidida, simbolizando su crecimiento como guerrero y su capacidad para enfrentar desafíos cada vez mayores. Esta transformación destaca su conexión con la energía Namekiana y su determinación para proteger a sus seres queridos.">
+
+            <img src="./img/PersonajesDb/Piccolo/piccoloOrange.png" alt="Orange Piccolo" loading="lazy"
+                class="Main-grid--img"
+                data-description="En este estado, Piccolo se vuelve más alto provocando un cambio en sus rasgos faciales. La fuerza de este estado es suficiente como para derribar y dejar inconsciente al poderoso Gamma Número 2 con tan sólo un único golpe. Posteriormente, Piccolo Anaranjado es el único que puede mantener una pelea igualada contra el monstruoso Cell Max, aunque con el paso del tiempo comienza a verse superado y es finalmente derrotado por la Gohan Bestia.">
+            <img src="./img/PersonajesDb/Piccolo/piccoloDaima.png" alt="Piccolo Daima" loading="lazy"
+                class="Main-grid--img"
+                data-description="En Dragon Ball Daima, Piccolo aparece rejuvenecido como un niño, pero mantiene su mente adulta y habilidades. Es clave en la nueva aventura, usando su inteligencia y poder para ayudar a resolver el misterio de la transformación que afecta a los héroes.">
+
+
+            <!-- Trunks -->
+            <img src="./img/PersonajesDb/Trunks/trunksNino.png" alt="Trunks Niño" loading="lazy" class="Main-grid--img"
+                data-description="El hijo de Vegeta y Bulma, Trunks, en su infancia, es un niño curioso y valiente. Su imagen refleja la mezcla de su herencia Saiyan y terrícola, simbolizando el potencial que lleva dentro. A pesar de su juventud, Trunks muestra una determinación innata y un deseo de proteger a sus seres queridos.">
+
+            <img src="./img/PersonajesDb/Trunks/trunksNinoSS.png" alt="Trunks Niño Super Saiyan" loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Trunks en Super Saiyan plasma la sorprendente capacidad de transformación de un joven que, aun en su inocencia, accede a un poder extraordinario lograndola en pleno entrenamiento con su padre Vegeta, el cual queda soprendido al verlo.">
+
+            <img src="./img/PersonajesDb/Trunks/trunks.png" alt="Trunks Base" loading="lazy" class="Main-grid--img"
+                data-description="es un guerrero mestizo saiyano/terrícola, hijo de las contrapartes de Bulma y Vegeta, Bulma del Futuro y Vegeta del Futuro, así como alumno de Gohan del Futuro y aprendiz de Kaio-shin[24], quien, con ayuda de su Máquina del tiempo consigue viajar al tiempo de Son Goku proveniente de una línea de tiempo apocalíptica.">
+
+            <img src="./img/PersonajesDb/Trunks/trunksSuperSaiyan.png" alt="Trunks Super Saiyan" loading="lazy"
+                class="Main-grid--img"
+                data-description="el joven guerrero desata una oleada de fuerza que se manifiesta en un cambio radical en su apariencia y aura. La imagen comunica el estallido de potencial que se activa cuando la adrenalina y la herencia se combinan para superar límites.">
+
+            <img src="./img/PersonajesDb/Trunks/superTrunks.png" alt="Super Trunks" loading="lazy"
+                class="Main-grid--img"
+                data-description="es el estado más avanzado del Supersaiyano de Primer Grado, logrado a través de un intenso entrenamiento, sea en el Salón del Espíritu y el Tiempo, en la Tierra, o en cualquier lugar. Es un aumento forzado y, por lo tanto, no es en sí una transformación natural. Esta forma representa el momento en que Trunks desata todo su potencial para enfrentarse a Cell, convirtiéndose en uno de los momentos más memorables de la serie.">
+
+            <img src="./img/PersonajesDb/Trunks/TrunksSuper.png" alt="Trunks De Super " loading="lazy"
+                class="Main-grid--img"
+                data-description="su cabello se mantiene corto salvo que ahora ya no tiene los dos mechones delgados en su frente. Similar a la mayoría de mestizos saiyanos de la serie, nunca se le ha visto con una cola. Al retornar a la Línea del presente en Dragon Ball Super, su color de cabello fue modificado junto con su atuendo. Su cabello pasó de ser color lila claro a azul cían similar al de Bulma, sus ojos son color azul cerúleo. Su atuendo gastado muestra los estragos que ha estado viviendo">
+
+            <img src="./img/PersonajesDb/Trunks/trunkSS.png" alt="Trunks Super Saiyan 2" loading="lazy"
+                class="Main-grid--img"
+                data-description="es un estado evolucionado, derivado y a la vez superior al Supersaiyan 2, alcanzado exclusivamente por Trunks del Futuro en el anime de Dragon Ball Super. En este estado su cabello se eriza más de lo normal; tiene un aura de los colores amarillo y celeste acompañados de unos relámpagos. La Logra en su afan de salvar su mundo de la destruccion a manos de Zamasu y Goku Black.">
+
+
+
+            <!-- Fusiones -->
+            <img src="./img/PersonajesDb/Gogeta/gogeta.png" alt="Gogeta Base" loading="lazy" class="Main-grid--img"
+                data-description="Gogeta posee una estructura similar a la de Goku, es alto y delgado, pero en su rostro tiene más similitud con Vegeta. Gogeta está formado por la fusión de dos Saiyans poderosos, Goku y Vegeta, a través de la Danza de la fusión.">
+
+            <img src="./img/PersonajesDb/Gogeta/gogetaSS.png" alt="Gogeta Super Saiyan" loading="lazy"
+                class="Main-grid--img"
+                data-description="“Gogeta Super Saiyan”, la fusión se intensifica con una muestra explosiva de poder y energía. La imagen refleja un aura dorada vibrante, simbolizando que la confluencia de dos espíritus combativos resulta en un guerrero capaz de hazañas sobrehumanas. mostrando su determinación y fuerza interior para la preparación en su batalla contra Janemba.">
+
+            <img src="./img/PersonajesDb/Gogeta/gogetaBlue.png" alt="Gogeta Super Saiyan Blue" loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Gogeta en Super Saiyan Blue es una fusión de poder y técnica. Su cabello azul y su aura brillante simbolizan la maestría y el control absoluto sobre su energía. Esta forma representa la culminación de su entrenamiento y su capacidad para enfrentar a los enemigos más poderosos del universo. Aparece por primera y unica vez en su pelea contra Broly">
+
+            <img src="./img/PersonajesDb/Gogeta/gogetaSS4.png" alt="Gogeta Super Saiyan 4" loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Gogeta en Super Saiyan 4 es una fusión de lo mejor de ambos guerreros. Su cabello se vuelve largo y rojo, y su cuerpo adquiere un aspecto más primitivo. Esta forma representa la unión de la fuerza bruta y la inteligencia estratégica, mostrando a Gogeta como un guerrero formidable y astuto.">
+
+            <img src="./img/PersonajesDb/Vegetto/vegetto.png" alt="Vegetto Base" loading="lazy" class="Main-grid--img"
+                data-description="Vegetto es el resultado de la fusión entre Goku y Vegeta mediante los pendientes Pothala. Su apariencia es una mezcla de ambos, con un cabello que combina los estilos de los dos guerreros. Aparece por primera vez en la saga de Majin Boo para hacer frente a poderoso Super Boo Gohan.">
+
+            <img src="./img/PersonajesDb/Vegetto/vegettoSS.png" alt="Vegetto Super Saiyan" loading="lazy"
+                class="Main-grid--img"
+                data-description="lleva la fusión a un nivel explosivo, en el que la energía dorada se desata en una manifestación de poder absoluto. La imagen resalta un aura inconfundible, símbolo de la combinación de dos espíritus guerreros en plena ebullición.">
+
+            <img src="./img/PersonajesDb/Vegetto/vegettoSSBlue.png" alt="Vegetto Super Saiyan Blue" loading="lazy"
+                class="Main-grid--img"
+                data-description="Al fusionarse en el Arco de Trunks del «Futuro», aprovechando el ki divino de Goku y Vegeta, Vegetto es capaz de transformarse en Supersaiyano Azul, y luchar con Zamas Pothala en esta transformación. En esta forma parece capaz de igualar o inclusive superar el poder casi inconmensurable de Zamas Pothala. Vegetto se hacía llamar en esta nueva forma: Vegetto Blue.">
+
+            <img src="./img/PersonajesDb/gotenks/gotenks.png" alt="Gotenks " loading="lazy" class="Main-grid--img"
+                data-description="Gotenks es el resultado de la fusión entre Goten y Trunks mediante la Danza de la fusión. Su apariencia es una mezcla de ambos, con un cabello que combina los estilos de los dos guerreros. Aparece por primera vez en la saga de Majin Boo para hacer frente a poderoso Super Boo ">
+            <img src="./img/PersonajesDb/gotenks/gotenksSS.png" alt="Gotenks Super Saiyan " loading="lazy"
+                class="Main-grid--img"
+                data-description="La transformación de Gotenks en Super Saiyan es un momento crucial en su desarrollo como guerrero. Su cabello dorado y su aura intensa simbolizan el despertar de su verdadero poder, mostrando su determinación y fuerza interior para la preparación en su batalla contra Boo.">
+
+            <img src="./img/PersonajesDb/gotenks/gotenksSS3.png" alt="Gotenks Super Saiyan 3" loading="lazy"
+                class="Main-grid--img"
+                data-description="lleva a la fusión a un estado extremo, donde cada rasgo se exagera en una explosión de cabello desordenado y energía en ebullición, la usa para salir de la habitación del tiempo y poder pelear contra Super Boo, cuenta con tecnicas muy curiosas como la creacion de fantasmas que explotan, un aro de energia que atrapa a su contrincante y su tecnica definitiva que consiste en transformar a su oponente en una bola de volley">
+
+            <!-- Frezzer -->
+            <img src="./img/PersonajesDb/Freezer/freezer1.png" alt="Freezer primer Forma" loading="lazy"
+                class="Main-grid--img"
+                data-description="La primera forma de Freezer es una representación de su naturaleza fría y calculadora. Su apariencia es elegante y amenazante, con un diseño que refleja su poder y autoridad. Esta forma es la base de su fuerza, mostrando su capacidad para adaptarse y superar a sus oponentes.">
+            <img src="./img/PersonajesDb/Freezer/freezer2.png" alt="Freezer segunda Forma" loading="lazy"
+                class="Main-grid--img"
+                data-description="La segunda forma de Freezer es una evolución de su poder, mostrando un diseño más robusto y amenazante. Su apariencia refleja su creciente agresividad y determinación para dominar a sus enemigos. Esta forma es un testimonio de su capacidad para adaptarse y superar desafíos.">
+            <img src="./img/PersonajesDb/Freezer/freezer3.png" alt="Freezer tercera Forma" loading="lazy"
+                class="Main-grid--img"
+                data-description="La tercera forma de Freezer es una manifestación de su poder y velocidad. Su diseño es más aerodinámico, lo que le permite moverse con agilidad y precisión. Esta forma representa su capacidad para adaptarse a diferentes situaciones y superar a sus oponentes.">
+
+            <img src="./img/PersonajesDb/Freezer/freezerFinal.png" alt="Freezer Forma Final" loading="lazy"
+                class="Main-grid--img"
+                data-description="La forma final de Freezer es la culminación de su poder y habilidades. Su apariencia es elegante y amenazante, con un diseño que refleja su autoridad y dominio. Esta forma representa su capacidad para ejercer una violencia casi inconmensurable.">
+
+            <img src="./img/PersonajesDb/Freezer/freezer100.png" alt="Freezer Maximo Poder" loading="lazy"
+                class="Main-grid--img"
+                data-description="La forma de Freezer al 100% es la manifestación máxima de su poder. Su apariencia es intimidante y poderosa, con un aura oscura que simboliza su dominio absoluto.">
+
+            <img src="./img/PersonajesDb/Freezer/goldenFreezer.png" alt="Golden Freezer " loading="lazy"
+                class="Main-grid--img"
+                data-description="Inventada y nombrada por el mismo Freezer en su entrenamiento de cuatro meses, es descrita como la evolución definitiva, se diferencia de otras formas de su raza en que esta no es un estado supresor, sino una transformación que evoluciona al usuario más allá de los límites del poder de su forma de nacimiento">
+
+            <img src="./img/PersonajesDb/Freezer/BlackFreezer.png" alt="Freezer Black" loading="lazy"
+                class="Main-grid--img"
+                data-description="La forma Black Freezer es una evolución del poder de Freezer, que le permite alcanzar niveles de fuerza y velocidad sin precedentes. Su apariencia es oscura y amenazante, simbolizando su dominio absoluto. Esta forma representa su capacidad para superar a sus oponentes y convertirse en un guerrero imparable.">
+
+            <!-- Cell -->
+            <img src="./img/PersonajesDb/Cell/Cell1erForma.png" alt="Cell Primera Forma" loading="lazy"
+                class="Main-grid--img"
+                data-description="Introduce al bio-androide con un diseño que sugiere complejidad y amenaza. La imagen destaca rasgos que presagian un proceso evolutivo inminente, donde cada línea es testimonio de la fusión de diferentes ADN para crear una bestia en ciernes.">
+
+            <img src="./img/PersonajesDb/Cell/Cell2daForma.png" alt="Cell Segunda Forma" loading="lazy"
+                class="Main-grid--img"
+                data-description="la figura se afina y se vuelve notablemente más peligrosa. La imagen subraya una estructura optimizada, con un aura que sugiere la creciente capacidad de absorción y la determinación de superar sus propios límites.">
+
+            <img src="./img/PersonajesDb/Cell/CellPerfecto.png" alt="Cell Perfecto" loading="lazy"
+                class="Main-grid--img"
+                data-description="La imagen de Cell Perfecto es un testimonio de su evolución culminante. Con una apariencia elegante y poderosa, la figura irradia confianza y dominio. La imagen destaca la fusión de sus habilidades, a punto de desatar una batalla epica contra Gohan.">
+
+            <img src="./img/PersonajesDb/Cell/CellJunior.png" alt="Cell Junior" loading="lazy" class="Main-grid--img"
+                data-description="Los Cell Juniors son una creación de Cell, que los genera a partir de su propio cuerpo. Son versiones más pequeñas y menos poderosas de Cell, pero aún así son extremadamente peligrosos. Su apariencia es similar a la de Cell, pero con un tamaño reducido y una actitud agresiva. Estos guerreros son utilizados por Cell para atacar a los héroes y demostrar su poder.">
+
+            <img src="./img/PersonajesDb/Cell/CellMax.png" alt="Cell Max" loading="lazy" class="Main-grid--img"
+                data-description="Cell Max es una versión mejorada y más poderosa de Cell, creada por el Dr. Hedo. Su apariencia es imponente y aterradora, creado para ser el arma definitiva de la organización Red Ribbon.">
+
+            <!-- Majin Boo -->
+            <img src="./img/PersonajesDb/MajinBoo/MajinBoo.png" alt="Majin Boo" loading="lazy" class="Main-grid--img"
+                data-description="El Majin Boo original es una criatura mágica y poderosa, con una apariencia redonda y suave. Su imagen refleja su naturaleza traviesa y destructiva, simbolizando su capacidad para absorber a otros seres y transformarse en diferentes formas. Esta forma representa el caos y la destrucción que trae consigo.">
+
+            <img src="./img/PersonajesDb/MajinBoo/majinBooFlaco-Photoroom.png" alt="Majin Boo Flaco" loading="lazy"
+                class="Main-grid--img"
+                data-description="se presenta con una figura esbelta pero no menos amenazadora. De hecho es toda la maldad que ha expulsado el Boo gordo, su esencia caótica y su potencial destructivo permanecen intactos y palpables.">
+
+            <img src="./img/PersonajesDb/MajinBoo/superBoo.png" alt="Super Boo" loading="lazy" class="Main-grid--img"
+                data-description="Super Boo es una forma más poderosa y agresiva de Majin Boo, con un diseño más delgado y musculoso. Se evidencia un estado en el que Majin Boo ha concentrado su energía en una forma ampliada y formidable. La imagen muestra a un Boo con rasgos intensificados, donde el equilibrio entre locura y eficacia en el combate se convierte en su sello distintivo.">
+
+            <img src="./img/PersonajesDb/MajinBoo/superBooGotenks.png" alt="Super Boo Gotenks" loading="lazy"
+                class="Main-grid--img"
+                data-description="Super Boo Gotenks es una forma de Majin Boo que ha absorbido a Goten y Trunks fusionados. Su apariencia es una mezcla de los tres personajes, con un diseño más poderoso y agresivo. Esta forma representa la fusión de habilidades y poderes, convirtiendo a Boo en un adversario formidable.">
+            <img src="./img/PersonajesDb/MajinBoo/superBooGohan.png" alt="Super Boo Gohan" loading="lazy"
+                class="Main-grid--img"
+                data-description="Super Boo Gohan es una forma de Majin Boo que ha absorbido a Gohan. Su apariencia es una mezcla de los dos personajes, con un diseño más poderoso y agresivo. Esta forma representa la fusión de habilidades y poderes, convirtiendo a Boo en el ser mas poderoso de la serie en aquel momento, siendo detenido unicamente por la fusion de Goku y Vegeta.">
+
+            <img src="./img/PersonajesDb/MajinBoo/kidBuu.png" alt="Kid Boo" loading="lazy" class="Main-grid--img"
+                data-description="Kid Boo es la forma original y más pura de Majin Boo, con un diseño pequeño. Su imagen refleja maldad y destrucción, siendo aun muy fuerte fue capaz casi de devolverle la Genkidama a Goku. Kid Boo es el antagonista final de Dragon Ball Z.">
+
+            <!-- Bills -->
+            <img src="./img/PersonajesDb/Bills/Bills.png" alt=" Dios Desctructor Beerus" loading="lazy"
+                class="Main-grid--img"
+                data-description="Beerus es el Dios de la Destrucción del universo 7, Es un humanoide Alto y delgado, de piel morada, y su apariencia es la de un gato, con orejas puntiagudas, similar a los gatos Cornish Rex. Lleva ropa egipcia negra con azul oro, con las mismas decoraciones blancas y naranjas de su aliado Whis y unos brazaletes dorados.">
+
+
+        </section>
+        <!-- fin de la seccion de personajes -->
+
+        <!-- lightbox -->
+        <div class="Lightbox" id="lightbox">
+            <i class="fa-solid fa-xmark Lightbox-close"></i>
+            <div class="Lightbox-content">
+                <img class="Lightbox-img" src="./img/imagenPj.png" alt="llamada a la accion" id="imagenGrande">
+                <h2 class="Lightbox-title"></h2>
+                <p class="Lightbox-text"></p>
+            </div>
+        </div>
+        <!-- fin de lightbox -->
+    </main>
+
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>

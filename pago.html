@@ -1,0 +1,92 @@
+<!-- 
+esta es la pagina de pago donde se hace el pago de los productos que se han añadido al carrito y se hace el pedido para que llegue a casa.
+hay una seccion con el resumen de la compra y otra que es un formulario con los datos del comprador, donde se pide el nombre, correo, direccion y metodo de pago.
+luego esta la confirmacion que es un mensaje de agradecimeinto despues de que se ha hecho el pedido y se le da la opcion de volver al inicio dde la pagina.
+  --> 
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Dragon Ball || Datos De Pago</title>
+    <link rel="icon" type="image/png" href="./img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- libreria de iconos -->
+  
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/pago.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="./js/loadHeaderFooter.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/pago.js" defer></script>
+</head>
+
+<body class="Body">
+    <header>
+        <div id="header"></div>
+    </header>
+    <main class="Main">
+
+        <section class="Pago">
+            <h2 class="Pago-title">Resumen De Tu Compra</h2>
+            <ul class="Pago-list" id="pagoList"> <!-- esto sera la lista que de compra que se tiene que cargar con js-->
+            </ul>
+            <p class="Pago-total" id="pagoTotal">Total: 0€</p>
+
+            <h3 class="Pago-subtitle" id="pagoSubtitle">Datos Del Comprador</h3>
+            <form method="post" class="Pago-form" id="pagoForm">
+                <label>
+                    Nombre Completo:
+                    <input type="text" name="nombre" placeholder="Nombre y apellidos" required>
+                </label>
+
+                <label>
+                    Correo Electrónico:
+                    <input type="email" name="correo" placeholder="ejemplo@gmail.com" required>
+                </label>
+
+                <label>
+                    Dirección de Envío:
+                    <input type="text" name="direccion" placeholder="Calle, Ciudad, Codigo Postal" required>
+                </label>
+
+                <label>
+                    Método De Pago:
+                    <select name="metodo" id="metodoPago" required>
+                        <option value="" disabled selected>Selecciona un metodo de pago</option>
+                        <option value="tarjeta">Tarjeta de credito</option>
+                        <option value="paypal">Paypal</option>
+                        <option value="contraReembolso">Contra reembolso</option>
+                    </select>
+                </label>
+                <div id="campoTarjeta" hidden>
+                    <label>
+                        Numero de Tarjeta:
+                        <input type="text" name="numeroTarjeta" id="numeroTarjeta" pattern="[0-9]{13,16}" maxlength="16"
+                             required> <!--me tocó usar type="text" porque con number no me funcionaba el maxlength -->
+                    </label>
+                </div>
+
+                <button type="submit" class="Pago-submit">Confirmar Compra</button>
+            </form>
+
+            <div class="Pago-confirmacion" id="confirmacion" >
+                <h3>¡Gracias por tu Compra!</h3>
+                <p>Tu pedido ha sido recibido y estará pronto en camino.</p>
+                <a href="index.html">Volver al inicio</a>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+.Body {
+    background-color: var(--color-fondo);
+}
+
+
+.IconoCarrito {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-black);
+    width: 50px;
+    height: 50px;
+    top: 90%;
+    right: 0.1%;
+    margin: 10px;
+    font-size: 1.5rem;
+    color: var(--color-fondo);
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.ContadorCarrito {
+    position: absolute;
+    top: 1%;
+    right: 0%;
+    margin: 2px;
+    font-size: 0.9rem;
+    border-radius: 50%;
+    background: red;
+    padding: 2px 6px;
+    transform-origin: top left;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.IconoCarrito:hover {
+    transform: scale(1.1);
+}
+
+.ContadorCarrito:hover {
+    zoom: 1.1;
+}
+
+.Main {
+    background-color: var(--color-fondo);
+    padding: 2rem;
+}
+
+.Tienda-titulo {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-family: "roboto", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.Tienda-grid {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.ProductCard {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 0px 8px var(--color-black);
+    transition: transform 0.3s ease;
+}
+
+.ProductCard--exclusive {
+    box-shadow: 0px 0px 10px green;
+
+}
+
+.ProductCard:hover {
+    transform: scale(1.05);
+}
+
+.ProductCard-img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.ProductCard-contain {
+   
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    gap: 0.5rem;
+}
+
+.ProductCard-title {
+    font-family: "crotah", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.ProductCard-text {
+    /* display: none; */
+    font-family: "roboto", sans-serif;
+    font-size: 0.9rem;
+    color: var(--color-gray);
+}
+
+
+.ProductCard-precio {
+    font-family: "roboto", sans-serif;
+    font-size: 1rem;
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.ProductCard-btn {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ProductCard-btn:active {
+    scale: 0.95;
+}
+
+.CarritoCompra {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    width: 100%;
+    height: 90%;
+    background: var(--color-fondo);
+
+    border-radius: 8px;
+    border: 1px solid var(--color-white);
+    padding: 1rem;
+    box-shadow: 0 0px 12px var(--color-black);
+    z-index: 9999;
+
+}
+
+.TituloCarrito {
+    font-family: "crotah", sans-serif;
+    margin-bottom: 1rem;
+    color: var(--color-black);
+
+}
+
+.ListaCarrito {
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 1rem;
+}
+
+.ListaCarrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--color-white);
+    color: var(--color-black);
+
+}
+
+.BtnFinalizar {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border: none;
+    border-radius: 4px;
+    padding: 0.7rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .IconoCarrito {
+        top: 15%;
+    }
+
+    .ContadorCarrito {
+        font-size: 0.8rem;
+    }
+
+    .CarritoCompra {
+        top: 22%;
+        right: 1%;
+        width: 300px;
+        height: auto;
+    }
+
+    .ProductCard-contain {
+        height: 30%;
+        justify-content: space-between;
+    }
+
+    .ProductCard-img {
+        
+        height: 65%;
+    }
+}

@@ -1,0 +1,183 @@
+<!-- 
+en esta pagina se va mostrar la seccion de videjuegos de la pagina, donde se va a mostrar una lista de los videojuegos que han salido con susfechas de lanzamiento y una breve descripcion de cada uno. ademas de un video y un enlace a la pagina oficial del juego. Sus secciones son:
+1. el header que viene precargado con el logo y el menu de navegacion
+2. el banner con el titulo de la seccion y una breve descripcion.
+3. la seccion de videojuegos que va a tener una lista de los videojuegos con su respectivo video, descripcion, plataformas y enlace a la pagina oficial del juego.
+4. el footer que viene precargado con el contenido legal y los enlaces a las redes sociales.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Dragon Ball || Videojuegos</title>
+    <link rel="icon" type="image/png" href="./img/icono.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- libreria de iconos -->
+
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/videojuegos.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <script src="./js/loadHeaderFooter.js" defer></script>
+    <script src="./js/header.js" defer></script>
+
+</head>
+
+<body class="Body">
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <main class="Main">
+        
+        <!-- SECCION DEL BANNER CON EL TITULO -->
+        <section class="Banner">
+            <div class="Banner-contenido">
+                <h1>Videojuegos del Universo Dragon Ball</h1>
+                <p>
+                    Explora aventuras épicas y sumérgete en combates inolvidables.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCION DE VIDEOJUEGOS -->
+        <div class="Videojuegos">
+
+            <!-- Juego #1 Dragon Ball Sparking Zero -->
+            <article class="Juego">
+                <iframe src="https://www.youtube.com/embed/H3VEExVmaQY?si=2IuOUNt_voNCZR8w" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" loading="lazy">
+                </iframe>
+                <div class="Juego-info">
+                    <h2>Dragon Ball Sparking Zero</h2>
+                    <p class="Juego-text">
+                        Lanzado en 2024 y esperado por muchos años por los fans de la saga
+                        Budokai Tenkaichi, este juego es una aventura de acción en la que
+                        experimentarás combates intensos y estrategias únicas que te sumergen
+                        en la esencia de Dragon Ball. Vive una experiencia innovadora a la vez
+                        que recuerdas las entregas anteriores de la saga Sparking.
+                    </p>
+                    <p class="Juego-plataformas">
+                        Plataformas: PC, PS5, Xbox Series X/S
+                    </p>
+                    <a href="https://es.bandainamcoent.eu/dragon-ball/dragon-ball-sparking-zero" target="_blank">
+                        Sitio Oficial
+                    </a>
+                </div>
+            </article>
+
+            <!-- Juego #2 Dragon Ball Z Kakarot -->
+            <article class="Juego">
+                <iframe src="https://www.youtube.com/embed/1Y-A1kUCvzY?si=W-vvF4BATRWa-f0o" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" loading="lazy">
+                </iframe>
+                <div class="Juego-info">
+                    <h2>Dragon Ball Z Kakarot</h2>
+                    <p class="Juego-text">
+                        Lanzado en el 2020 y aunque ya lleva buen tiempo, este juego no muere y revive la épica historia
+                        de Dragon Ball Z en un mundo abierto lleno de combates dinámicos y momentos inolvidables. Ponte
+                        en la piel de Son Goku y vive cada combate desde su perspectiva.
+                        Ademas un punto para añadir es que a pesar de llevar varios años en el mercado, el juego aun
+                        sigue recibiendo contenido adicional, lo que lo hace un juego muy completo y con una gran
+                        cantidad de horas de juego.
+                    </p>
+                    <p class="Juego-plataformas">
+                        Plataformas: PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch
+                    </p>
+                    <a href="https://es.bandainamcoent.eu/dragon-ball/dragon-ball-z-kakarot" target="_blank">
+                        Sitio Oficial
+                    </a>
+                </div>
+            </article>
+
+            <!-- Juego #3 Dragon Ball FighterZ -->
+            <article class="Juego">
+                <iframe src="https://www.youtube.com/embed/RfgW8pzJ2IE?si=wFdzWp3UiS4eT40T&amp;start=29"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                <div class="Juego-info">
+                    <h2>Dragon Ball FighterZ</h2>
+                    <p class="Juego-text">
+                        Lanzado en 2018, este juego de lucha 2.5D fue el resultado de años de anticipación por parte de
+                        los fans de la franquicia. Con un sistema de combate en equipos de tres contra tres, FighterZ
+                        combina movimientos fluidos, combos espectaculares y animaciones que parecen sacadas
+                        directamente del anime, logrando capturar la esencia vibrante y enérgica de Dragon Ball
+                    </p>
+                    <p class="Juego-plataformas">
+                        Plataformas: PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch
+                    </p>
+                    <a href="https://es.bandainamcoent.eu/dragon-ball/dragon-ball-fighterz" target="_blank">
+                        Sitio Oficial
+                    </a>
+                </div>
+            </article>
+
+            <!-- Juego #4 Dragon Ball Xenoverse -->
+            <article class="Juego">
+                <iframe src="https://www.youtube.com/embed/V8b6bFHdJ_Q?si=C_j_kkR6-zIunIaS" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                <div class="Juego-info">
+                    <h2>Dragon Ball Xenoverse 1 y 2</h2>
+                    <p class="Juego-text">
+                        Lanzado en 2015 y su segunda entrega en 2016, Xenoverse es un juego de rol y lucha que te
+                        permite crear tu propio personaje y explorar el mundo de Dragon Ball. Con una narrativa única
+                        que incluye viajes en el tiempo y la posibilidad de interactuar con personajes icónicos,
+                        Xenoverse ofrece una experiencia rica y variada. La segunda entrega, Xenoverse 2, expande aún
+                        más el universo del juego con nuevas misiones, personajes y modos de juego. Ademas ambas
+                        entregas siguen recibiendo actualizaciones periódicas que enriquecen el contenido del juego, lo
+                        que lo hace un título muy completo.
+                    </p>
+                    <p class="Juego-plataformas">
+                        Plataformas: PC, PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch
+                    </p>
+                    <a href="https://es.bandainamcoent.eu/dragon-ball/dragon-ball-xenoverse-2" target="_blank">
+                        Sitio Oficial
+                    </a>
+                </div>
+            </article>
+
+            <!-- Juego #5 Dragon Ball legends -->
+            <article class="Juego">
+                <iframe src="https://www.youtube.com/embed/sL1aH6exacA?si=LL571RlCJOWXL3DX" title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+                <div class="Juego-info">
+                    <h2>Dragon Ball Legends</h2>
+                    <p class="Juego-text">
+                        Lanzado en 2018, Legends es un juego de lucha para dispositivos móviles que ofrece combates en
+                        tiempo real y una narrativa original. Con una jugabilidad accesible y gráficos impresionantes,
+                        Legends permite a los jugadores coleccionar cartas de personajes y enfrentarse a oponentes en
+                        emocionantes batallas. Además, el juego recibe actualizaciones periódicas con nuevos personajes
+                        y eventos, lo que lo mantiene fresco y emocionante para los jugadores.
+                    </p>
+                    <p class="Juego-plataformas">
+                        Plataformas: Movil (Android, iOS)
+                    </p>
+                    <a href="https://dble.bn-ent.net/es/" target="_blank">
+                        Sitio Oficial
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+
+
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+</body>
+
+</html>

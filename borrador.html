@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <!-- libreria de iconos -->
+  
+  <!-- archivos CSS -->
+   <link rel="stylesheet" href="./css/base.css">
+  <link type="text/css" rel="stylesheet" href="./css/header.css" />
+  <link type="text/css" rel="stylesheet" href="./css/footer.css" />
+  <title>Header y Footer</title>
+</head>
+
+<body>
+  <header  class="Header">
+    <div class="Header-logo">
+      <a href="index.html" class="Header-logoLink">
+        <img src="./img/logo-shenron.png" class="Header-logoImg" alt="imagen de logo principal">
+      </a>
+    </div>
+    <nav class="Header-nav">
+      <ul class="Header-navList">
+        <li class="Header-navItem"><a class="Header-navLink" href="./personajes.html">Personajes</a></li>
+        <li class="Header-navItem"><a class="Header-navLink" href="./anime.html">Anime</a></li>
+        <li class="Header-navItem"><a class="Header-navLink" href="./tienda.html">Tienda</a></li>
+      </ul>
+      <button class="Header-navBtn " id="Header-navBtn">
+        <i class="fa-solid fa-bars open" id="open"></i>
+        <i class="fa-solid fa-xmark close " id="close"></i>
+      </button>
+      <ul class="Header-navMenu">
+        <li><a href="./juegos.html">Videojuegos</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+        <li><a href="index.html#registro">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main style="width: 100%; height: 60vh; background-color: black;"></main>
+
+  <footer class="Footer">
+
+    <div class="Footer-content">
+      <section class="Footer-redes">
+        <h2 class="Footer-redesTitle">Redes sociales</h2>
+        <ul class="Footer-redesList">
+          <li class="Footer-redesItem">
+            <a class="Footer-redesLink" href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a>
+          </li>
+          <li class="Footer-redesItem">
+            <a class="Footer-redesLink" href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+          </li>
+          <li class="Footer-redesItem">
+            <a class="Footer-redesLink" href="#"><i class="fa-brands fa-square-x-twitter"></i> (Twitter)</a>
+          </li>
+          <li class="Footer-redesItem">
+            <a class="Footer-redesLink" href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="Footer-contentLegal">
+        <h2 class="Footer-contentTitle">Información legal</h2>
+        <ul class="Footer-contentList">
+
+          <li class="Footer-contentItem">
+            <a class="Footer-contentLink" href="#">Politica de datos</a>
+          </li>
+
+          <li class="Footer-contentItem">
+            <a class="Footer-contentLink" href="#">Condiciones generales</a>
+          </li>
+
+          <li class="Footer-contentItem">
+            <a class="Footer-contentLink" href="#">Aviso legal</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="Footer-esferas">
+
+      <img class="Footer-esferasImg" src="./img/esfera-1-estrella.png" alt="esfera de 1 strellas">
+      <img class="Footer-esferasImg Footer-esferasImg--1" src="./img/esfera-2-estrellas.png" alt="esfera de 2 strellas">
+      <img class="Footer-esferasImg Footer-esferasImg--1" src="./img/esfera-3-estrellas.png" alt="esfera de 3 strellas">
+      <img class="Footer-esferasImg" src="./img/esfera-4-estrellas.png" alt="esfera de 4 strellas">
+      <img class="Footer-esferasImg" src="./img/esfera-5-estrellas.png" alt="esfera de 5 strellas">
+      <img class="Footer-esferasImg Footer-esferasImg--1" src="./img/esfera-6-estrellas.png" alt="esfera de 6 strellas">
+      <img class="Footer-esferasImg" src="./img/esfera-7-estrellas.png" alt="esfera de 7 strellas">
+
+
+    </div>
+  </footer>
+  <script type="module" src="./js/header.js"></script>
+</body>
+</html>

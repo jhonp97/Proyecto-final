@@ -1,0 +1,193 @@
+<!-- 
+ esta es la pagina de la tienda que va a tener los productos que se pueden comprar y se va a poder agregar al carrito de compras.
+ sus secciones son:
+ 1.el header que viene precargado con el logo y el menu de navegacion
+ 2.el icono del carrito con su contador de productos
+ 3.el carrito de compras que se va a mostrar al hacer click en el icono del carrito y va a tener los productos que se han agregado al carrito y el boton para finalizar la compra.
+ 4. la seccion de la tienda con las figuras que se pueden comprar y sus respectivas tarjetas con la imagen, nombre, descripcion, precio y boton para agregar al carrito.
+ 5. el footer que viene precargado con el contenido legal y los enlaces a las redes sociales.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Dragon Ball || Tienda</title>
+    <link rel="icon" type="image/png" href="./img/icono.png">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- libreria de iconos -->
+    
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    
+    <link rel="stylesheet" href="./css/tienda.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+    <script src="./js/loadHeaderFooter.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/tienda.js" defer></script>
+</head>
+
+<body class="Body">
+    <header>
+        <div id="header"></div>
+    </header>
+    <!-- este es el icono con el numero de productos en el carrito -->
+    <div class="IconoCarrito" id="iconoCarrito">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span class="ContadorCarrito" id="contadorCarrito">0</span>
+    </div>
+
+    <div class="CarritoCompra" id="carritoCompra" hidden>
+        <h3 class="TituloCarrito">Carrito de compras</h3>
+        <ul class="ListaCarrito" id="listaCarrito"> <!-- Aquí se vsn a agregar los productos del carrito --> </ul>
+        <button class="BtnFinalizar" id="btnFinalizarCompra">Finalizar compra</button>
+    </div>
+
+
+    <main class="Main">
+        <section class="Tienda">
+            <h2 class="Tienda-titulo">Figuras de colección</h2>
+            <!-- TARJETAS DE LOS PRODUCTOS O FIGURAS -->
+            <div class="Tienda-grid">
+                <!-- GOKU -->
+                <article class="ProductCard" data-id="1" data-nombre="Goku Super Saiyan" data-precio="40">
+                    <img class="ProductCard-img" src="./img/tienda/gokuSHFiguarts.webp" alt="Goku Super Saiyan"
+                        loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Goku Super Saiyan </h3>
+                        <p class="ProductCard-text">Goku Super Saiyan de la marca SH Figuarts, figura articulada de 15
+                            cm de altura.</p>
+                        <p class="ProductCard-precio">40€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- VEGETA -->
+                <article class="ProductCard" data-id="2" data-nombre="Vegeta Super Saiyan" data-precio="35">
+                    <img class="ProductCard-img" src="./img/tienda/vegetaSHFiguarts.webp" alt="Vegeta Super Saiyan"
+                        loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Vegeta Super Saiyan </h3>
+                        <p class="ProductCard-text">Vegeta Super Saiyan de la marca SH Figuarts, figura articulada de 12
+                            cm de altura.</p>
+                        <p class="ProductCard-precio">35€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- GOHAN -->
+                <article class="ProductCard" data-id="3" data-nombre="Gohan Beast" data-precio="60">
+                    <img class="ProductCard-img" src="./img/tienda/gohanBeast.webp" alt="Gohan Beast" loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Gohan Beast </h3>
+                        <p class="ProductCard-text">Gohan Beast de la marca SH Figuarts, figura articulada de 15 cm de
+                            altura </p>
+                        <p class="ProductCard-precio">60€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+                
+                <!-- BROLY -->
+                <article class="ProductCard ProductCard--exclusive" data-id="6" data-nombre="Broly Super Saiyan" data-precio="50">
+                    <img class="ProductCard-img" src="./img/tienda/SHF-SS-BROLY-EE-01 (1).webp"
+                        alt="Broly Super Saiyan Exclusivo" loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Broly Super Saiyan ¡EXCLUSIVO! </h3>
+                        <p class="ProductCard-text">Broly Super Saiyan de la marca SH Figuarts, figura articulada de 18
+                            cm de altura. Una pieza exclusiva de edición limitada</p>
+                        <p class="ProductCard-precio">120€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- PICCOLO -->
+                <article class="ProductCard" data-id="4" data-nombre="Orange Piccolo" data-precio="69">
+                    <img class="ProductCard-img" src="./img/tienda/SHF-ORANGE-PICCOLO.webp" alt="Orange Piccolo"
+                        loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Orange Piccolo </h3>
+                        <p class="ProductCard-text">Orange Piccolo de la marca SH Figuarts, figura articulada de 18 cm
+                            de altura.</p>
+                        <p class="ProductCard-precio">69€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- FRIEZA -->
+                <article class="ProductCard" data-id="5" data-nombre="Freezer Full Power" data-precio="68">
+                    <img class="ProductCard-img" src="./img/tienda/frieza-full-power-100-figura-13-cm-.webp"
+                        alt="Freezer Full Power" loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Freezer Full Power </h3>
+                        <p class="ProductCard-text">Freezer Full Power de la marca SH Figuarts, figura articulada de 13
+                            cm de altura.</p>
+                        <p class="ProductCard-precio">68€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+
+                <!-- MAJIN BOO -->
+                <article class="ProductCard" data-id="7" data-nombre="Majin Boo" data-precio="65">
+                    <img class="ProductCard-img" src="./img/tienda/majonBooSH (1).webp" alt="Majin Boo" loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Majin Boo </h3>
+                        <p class="ProductCard-text">Majin Boo de la marca SH Figuarts, figura articulada de 15
+                            cm de altura.</p>
+                        <p class="ProductCard-precio">65€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- CELL -->
+                <article class="ProductCard" data-id="8" data-nombre="Cell" data-precio="60">
+                    <img class="ProductCard-img" src="./img/tienda/CellSHFiguarts (1).webp" alt="Cell primer forma" loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Cell 1er Forma </h3>
+                        <p class="ProductCard-text">Cell 1er Forma de la marca SH Figuarts, figura articulada de 17
+                            cm de altura.</p>
+                        <p class="ProductCard-precio">60€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- BROLY FULL POWER -->
+                <article class="ProductCard" data-id="9" data-nombre="Broly Full Power" data-precio="85">
+                    <img class="ProductCard-img" src="./img/tienda/Broly-Super-Saiyan-Full-Power-SH-Figuarts.webp" alt="Broly Full Power" loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Broly Full Power </h3>
+                        <p class="ProductCard-text">Broly Full Power de la marca SH Figuarts, figura articulada de 22
+                            cm de altura.</p>
+                        <p class="ProductCard-precio">80€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <!-- GOKU ULTRA INSTINTO -->
+                <article class="ProductCard" data-id="10" data-nombre="Goku Ultra Instinto" data-precio="90">
+                    <img class="ProductCard-img" src="./img/tienda/GokuUISHfiguarts (1).webp" alt="Goku Ultra Instinto" loading="lazy">
+                    <div class="ProductCard-contain">
+                        <h3 class="ProductCard-title">Goku Ultra Instinto </h3>
+                        <p class="ProductCard-text">Goku Ultra Instinto Dominado de la marca SH Figuarts, figura articulada de 14.5
+                            cm de altura.</p>
+                        <p class="ProductCard-precio">90€</p>
+                        <button class="ProductCard-btn">Agregar al carrito</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+       
+        
+    </main>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>

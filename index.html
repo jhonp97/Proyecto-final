@@ -1,0 +1,218 @@
+<!-- Esta es mi pagina de inicio, y va a estar dividida en varias secciones que son:
+1. el hero con un titulo de bienvenida 
+2. la seccion de noticias con un carrusel que va a tener 3 noticias
+3. La seccion de destacados que es donde se va mostrar una introduccion a las secciones del header para que el usuario se interesa al verlas
+4. la seccion de registro que es un formulario para que el usuario se registre y le llegue un correo con mas informacion sobre la pagina y las novedades que se vayan subiendo a la misma.
+5. la seccion de contacto en el footer donde se ponen los enlaces a las redes sociales y tambien esta todo el contenido legal
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Dragon Ball</title>
+    <link rel="icon" type="image/png" href="./img/icono.png">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- libreria de iconos -->
+
+    
+    <link rel="preload" href="./css/base.css" as="style">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
+
+    <script src="./js/loadHeaderFooter.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/index1.js" defer></script>
+</head>
+
+<body class="Body">
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <main class="Main">
+        <div class="Section1">
+            <h2 class="Section1-title">¡¡¡Bienvenido al universo de Dragon Ball!!!</h2>
+
+        </div>
+
+        <!-- -------------------------------------------------------------------------- -->
+        <!-- ------------------------- SECCION DE NOTICIAS ---------------------------- -->
+        <!-- -------------------------------------------------------------------------- -->
+        <section class="Section2" id="noticias">
+            <h2 class="Section2-title">
+                <span>Noticias</span>
+                <span>Noticias</span>
+                <span>Noticias</span>
+            </h2>
+            <!--aqui empieza el carrusel para las noticias con las imagenes y el texto -->
+            <div class="Section2-carrusel">
+                <!-- noticias 1 -->
+                <div class="Carrusel-item Carrusel-item--active">
+                    <iframe src="https://www.youtube.com/embed/LNPPhWV6Maw?si=0VB2woh6MTbubd7l"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Carrusel-itemImg"
+                        loading="lazy"></iframe></iframe>
+                    <div class="Carrusel-itemContent">
+                        <h3 class="Carrusel-itemTitle">La Gran pelea Final</h3>
+                        <p class="Carrusel-itemText">Goku logra transfromarse en el Super Saiyan 4 despues de una gran
+                            secuencia de transformaciones para dar paso a la pelea final de la serie entre Gomah y Son
+                            Goku, quien con su tercer ojo es casi invencible... ¿será que mas adelante veremos mas de
+                            esta poderosa transformacion? ya que poco se nos ha dicho sobre ella y la serie termina con
+                            una gran incognita sobre si habrá segunda temporada o no...
+                            <br>
+                            Ya lo veremos...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Noticia 2 -->
+                <div class="Carrusel-item">
+                    <img src="./img//noticias/portadaDragonBallSuper.webp" alt="portada del manga de Dragon Ball Super"
+                        class="Carrusel-itemImg" loading="lazy">
+                    <div class="Carrusel-itemContent">
+                        <h3 class="Carrusel-itemTitle">Vuelve el Manga de Dragon Ball Super</h3>
+                        <p class="Carrusel-itemText">Tras varios meses de espera el mangaka <em>Toyotaro</em> que ahora
+                            es quien lleva las riendas de la historia principal tras del fallecimiento de <em>Akira
+                                Toriyama</em> nos sorprende con una impactante ilustracion de lo que será laportada del
+                            tomo #24 de Dragon Ball Super, dejandonos ver a nuestros principales guerreros en sus
+                            estados mas poderosos </p>
+                    </div>
+                </div>
+
+                <!-- noticia 3 -->
+                <div class="Carrusel-item">
+                    <!-- etiqueta pegada desde youtube para mostrar el video en la pagina -->
+                    <iframe src="https://www.youtube.com/embed/3EN5U35cx_U?si=TkrMP7co-PiT1tVt"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="Carrusel-itemImg"
+                        loading="lazy"></iframe></iframe>
+                    <!-- <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2024/03/the-10-best-dragon-ball-z-characters-ranked.jpg?q=70&fit=crop&w=1140&h=&dpr=1" alt="foto" class="Carrusel-itemImg" loading="lazy"> -->
+                    <div class="Carrusel-itemContent">
+                        <h3 class="Carrusel-itemTitle">Nuevo DLC para el videojuego DBZ: Kakarott</h3>
+                        <p class="Carrusel-itemText">el exitoso juego de rol de acción que permite a los jugadores
+                            experimentar todas las increíbles peleas de la icónica serie Dragon Ball Z como el propio
+                            Goku, ¡acaba de lanzar un tráiler para el próximo DLC¡.
+                            ¡En el tráiler, puedes ver a Goku y su tripulación en una aventura a través del vasto Tercer
+                            Mundo Demonio, donde podemos apreciar un poco de los movimientos de combate que podremos
+                            realizar dentro del juego! </p>
+                    </div>
+                </div>
+            </div>
+            <!-- flechas para el carrusel -->
+            <button class="Carrusel-btn Carrusel-btn-atras"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="Carrusel-btn Carrusel-btn-siguiente"><i class="fa-solid fa-arrow-right"></i></button>
+            <!-- circulos para indicar la noticia activa -->
+            <div class="Carrusel-circulos">
+                <span class="Circulo  Circulo--active"></span>
+                <span class="Circulo"></span>
+                <span class="Circulo"></span>
+            </div>
+        </section>
+
+
+        <!-- ------------------------------------------------------------------------ -->
+        <!--------------------------- SECCION DE SITIOS  ------------------------------->
+        <!-- ------------------------------------------------------------------------ -->
+        <section class="Contain-destacados" id="destacados">
+            <h2 class="Contain-title">Destacados</h2>
+            <div class="Destacados">
+                <article class="Destacados-card" style="background-image: url('./img/destacadosJuegoGif.gif');">
+                    <div class="Destacados-contain">
+                        <h2>Videojuegos</h2>
+                        <p>Explora aventuras épicas y sumérgete en combates inolvidables.</p>
+                        <a href="videojuegos.html" class="Destacados-btn">Ver Videojuegos</a>
+                    </div>
+                </article>
+
+                <article class="Destacados-card" style="background-image: url('./img/destacadosPj.gif');">
+                    <div class="Destacados-contain">
+                        <h2>Personajes</h2>
+                        <p>Conoce a los héroes y villanos que definen la leyenda.</p>
+                        <a href="personajes.html" class="Destacados-btn">Ver Personajes</a>
+                    </div>
+                </article>
+
+                <article class="Destacados-card"
+                    style="background-image: url('./img/visitarTienda.webp');">
+                    <div class="Destacados-contain">
+                        <h2>Tienda</h2>
+                        <p>Descubre figuras de colección y artículos exclusivos.</p>
+                        <a href="tienda.html" class="Destacados-btn">Visitar Tienda</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- ------------------------------------------------------------------------ -->
+        <!--------------------------- SECCION DE FORMULARIO ---------------------------->
+        <!-- ------------------------------------------------------------------------ -->
+        <section class="Section" id="registro">
+
+            <h2 class="Section-titleForm">Regístrate para mas Información</h2>
+
+            <form method="post" class="Form">
+                <label class="Form-text">
+                    Nombre:
+                    <input id="nombre" class="Form-input" type="text" name="nombre" placeholder="" autocomplete="on"
+                        required>
+                </label>
+                <label class="Form-text">
+                    Apellidos:
+                    <input id="apellidos" class="Form-input" type="text" name="apellidos" placeholder=""
+                        autocomplete="on" required>
+                </label>
+                <label class="Form-text">
+                    Email:
+                    <input id="email" class="Form-input" type="email" name="email" placeholder="ejemplo@gmail.com"
+                        required>
+                </label>
+                <label class="Form-text">
+                    Número:
+                    <input id="tel" class="Form-input" name="tel" type="tel" pattern="[0-9]{9}" autocomplete="on" maxlength="9"
+                        required>
+                </label>
+                <label class="Form-text">
+                    Fecha de nacimiento:
+                    <input id="date" class="Form-input" name="date" type="date" required>
+                </label>
+                <label class=" Form-text">
+                    Contraseña:
+                    <input id="password" class="Form-input" name="password" type="password" minlength="10" required>
+                </label>
+                <div class="Div-repeatPassword">
+                    <label class="Form-text" for="repeatPassword">
+                        Repetir Contraseña:
+                    </label>
+                    <input id="repeatPassword" class="Form-input Form-inputRepeatPassword" minlength="10"
+                        name="repeatPassword" type="password" required>
+                    <button id="btn-password" class="Btn-password" type="button" aria-label="mostrar/ocultar contraseña"
+                        title="Ver contraseña">🙈</button>
+                    <!-- poner un boton con el ojo cerrado que cuando se de click se abra -->
+                </div>
+                <label class="Form-textCheck">
+                    <input id="chekbox" class="Form-inputCheck" type="checkbox" required>
+                    <a href="./informacionlegal.html#terminosCondiciones" target="_blank">Acepta los terminos y
+                        condiciones</a>
+                </label>
+
+                <button type="submit" class="Btn-submit" id="Btn-submit">Enviar</button>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+</body>
+
+</html>
