@@ -35,7 +35,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "roboto";
-    src: url("/fonts/Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+    src: url("/fonts/Robotowght.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -43,7 +43,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "crotah";
-    src: url("/fonts/Crotahfreeversion-Italic.ttf") format("truetype");
+    src: url("/fonts/Crotahfreeversionitalic.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -51,7 +51,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "road-rage";
-    src: url("/fonts/road-rage.ttf") format("truetype");
+    src: url("/fonts/roadrage.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
