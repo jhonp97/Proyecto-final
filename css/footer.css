@@ -53,7 +53,7 @@ estilos para el footer, esta dividio en las siguientes partes:
   align-items: center;
   margin-top: 20px;
   font-size: clamp(1.2rem, 1.7rem, 2.2rem);
-  font-family: cursive;
+  font-family: "crotah", cursive;
   color: var(--color-secondary);
   text-shadow: 1px 1px 2px white;
 }
@@ -71,7 +71,7 @@ estilos para el footer, esta dividio en las siguientes partes:
 .Footer-redesLink,
 .Footer-contentLink {
   text-decoration: none;
-  font-family: cursive;
+  font-family: "roboto", sans-serif;
   font-size: clamp(0.8rem, 1.6rem, 1.8rem);
   color: var(--color-secondary);
 }
