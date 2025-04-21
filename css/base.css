@@ -35,7 +35,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "roboto";
-    src: url("/fonts/robotowght.woff2") format("woff2");
+    src: url("../fonts/robotowght.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -53,7 +53,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "road-rage";
-    src: url("/fonts/roadrage.woff2") format("woff2");
+    src: url("../fonts/roadrage.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
