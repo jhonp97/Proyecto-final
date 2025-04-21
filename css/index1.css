@@ -34,7 +34,7 @@ cada seccion contiene sus respectivos medias queries
   width: 100vw;
   height: 87vh;
   /* estilos para la imagen que ocupa toda la pantalla (hero) */
-  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)60%, rgb(0, 0, 0) 100%), url(/img/hero-goku.webp);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0)60%, rgb(0, 0, 0) 100%), url(/./img/hero-goku.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
