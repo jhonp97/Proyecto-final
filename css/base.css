@@ -35,7 +35,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "roboto";
-    src: url("/fonts/Robotowght.ttf") format("truetype");
+    src: url("https://github.com/jhonp97/Proyecto-final/raw/refs/heads/main/fonts/Robotowght.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -44,7 +44,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "crotah";
-    src: url("/fonts/Crotahfreeversionitalic.ttf") format("truetype");
+    src: url("https://github.com/jhonp97/Proyecto-final/blob/main/fonts/Crotahfreeversionitalic.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -53,7 +53,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "road-rage";
-    src: url("fonts/roadrage.ttf") format("truetype");
+    src: url("https://github.com/jhonp97/Proyecto-final/raw/refs/heads/main/fonts/roadrage.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -62,7 +62,7 @@ body.DarkMode {
 
 @font-face {
     font-family: "saiyan";
-    src: url("/fonts/Saiyan-Sans.ttf") format("truetype");
+    src: url("https://github.com/jhonp97/Proyecto-final/raw/refs/heads/main/fonts/Saiyan-Sans.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
