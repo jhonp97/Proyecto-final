@@ -223,6 +223,7 @@ estilos para el header, esta dividio en las siguientes partes:
     .Header-logo {
         
         max-width: 14rem;
+        max-height: 100%;
         
     
     }
@@ -232,6 +233,16 @@ estilos para el header, esta dividio en las siguientes partes:
 
 
 @media (min-width:760px) and (max-width:1175px) {
+
+
+    .Header-logo {
+        
+        max-width: 12rem;
+        max-height: 100%;
+        
+    
+    }
+    
 
     .Header-navList {
         display: flex;
