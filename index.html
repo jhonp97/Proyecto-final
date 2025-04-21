@@ -1,4 +1,5 @@
 <!-- Esta es mi pagina de inicio, y va a estar dividida en varias secciones que son:
+ 0. usé la pagina de metatags.io  para generar las etiquetas meta 
 1. el hero con un titulo de bienvenida 
 2. la seccion de noticias con un carrusel que va a tener 3 noticias
 3. La seccion de destacados que es donde se va mostrar una introduccion a las secciones del header para que el usuario se interesa al verlas
@@ -12,14 +13,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
     <title>Universo Dragon Ball</title>
+    <meta name="title" content="Universo Dragon Ball" />
+    <meta name="description" content="Bienvenidos  a Universo Dragon Ball donde vas a poder explorar información sobre personajes, videojuegos, figuras y novedades de tu anime favorito
+" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jhonp97.github.io/Proyecto-final/" />
+    <meta property="og:title" content="Universo Dragon Ball" />
+    <meta property="og:description" content="Bienvenidos  a Universo Dragon Ball donde vas a poder explorar información sobre personajes, videojuegos, figuras y novedades de tu anime favorito
+" />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://jhonp97.github.io/Proyecto-final/" />
+    <meta property="twitter:title" content="Universo Dragon Ball" />
+    <meta property="twitter:description" content="Bienvenidos  a Universo Dragon Ball donde vas a poder explorar información sobre personajes, videojuegos, figuras y novedades de tu anime favorito
+" />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
     <link rel="icon" type="image/png" href="./img/icono.png">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" as="style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- libreria de iconos -->
 
-    
-    
+
+
     <link rel="stylesheet" href="./css/base.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/index1.css">
@@ -141,8 +164,7 @@
                     </div>
                 </article>
 
-                <article class="Destacados-card"
-                    style="background-image: url('./img/visitarTienda.webp');">
+                <article class="Destacados-card" style="background-image: url('./img/visitarTienda.webp');">
                     <div class="Destacados-contain">
                         <h2>Tienda</h2>
                         <p>Descubre figuras de colección y artículos exclusivos.</p>
@@ -178,8 +200,8 @@
                 </label>
                 <label class="Form-text">
                     Número:
-                    <input id="tel" class="Form-input" name="tel" type="tel" pattern="[0-9]{9}" autocomplete="on" maxlength="9"
-                        required>
+                    <input id="tel" class="Form-input" name="tel" type="tel" pattern="[0-9]{9}" autocomplete="on"
+                        maxlength="9" required>
                 </label>
                 <label class="Form-text">
                     Fecha de nacimiento:
