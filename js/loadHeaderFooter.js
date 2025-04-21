@@ -2,7 +2,7 @@
 // esta es la funcion que carga el header y el footer para no tener que repetir el mismo codigo en cada pagina
 
 
-async function loadHeaderFooter(id, archivo) { // async para decirle al navegador que la funcion tomará tiempo
+async function cargarHeaderFooterHandler(id, archivo) { // async para decirle al navegador que la funcion tomará tiempo
     try {                                       // uso try para capturar posibles errores
         const buscarArchivo = await fetch(archivo);
         // se busca el archivo  proporcionado con (fetch(archivo)) mientras detiene el codigo y   despues lo guardo en la constante
@@ -15,7 +15,7 @@ async function loadHeaderFooter(id, archivo) { // async para decirle al navegado
     }
 }
 
- loadHeaderFooter("header", "header.html");
- loadHeaderFooter("footer", "footer.html");
+ cargarHeaderFooterHandler("header", "header.html");
+ cargarHeaderFooterHandler("footer", "footer.html");
 
 

@@ -4,7 +4,7 @@
 // funcion asincrona se terminara de cargar y luego poder ejecutar el codigo del menu, eso con la 
 // funcion then() que ejecuta el bloque de codigo despues de que la funcion asincrona se cargue  */
 
-loadHeaderFooter("header", "header.html").then(()=>{
+cargarHeaderFooterHandler("header", "header.html").then(()=>{
 
 
 // Declaro mis variables
