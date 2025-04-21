@@ -39,7 +39,7 @@ body.DarkMode {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    crossorigin: anonymous;
+    
 }
 
 @font-face {
@@ -48,7 +48,7 @@ body.DarkMode {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    crossorigin: anonymous;
+    
 }
 
 @font-face {
@@ -57,7 +57,7 @@ body.DarkMode {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    crossorigin: anonymous;
+    
 }
 
 @font-face {
@@ -66,5 +66,5 @@ body.DarkMode {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-    crossorigin: anonymous;
+    
 }
