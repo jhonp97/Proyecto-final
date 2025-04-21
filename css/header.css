@@ -129,7 +129,7 @@ estilos para el header, esta dividio en las siguientes partes:
     justify-content: center;
     align-items: center;
     gap: 20px;
-    z-index: 999;
+    z-index: 15;
 
 
 
