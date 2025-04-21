@@ -31,7 +31,6 @@ estilos para el header, esta dividio en las siguientes partes:
     padding: 5px;
     margin-left: 1.5rem;
     width: 15rem;
-    ;
     height: 100%;
     overflow: hidden;
 
@@ -219,6 +218,13 @@ estilos para el header, esta dividio en las siguientes partes:
 
     .Header-navMenu li {
         margin-top: 20px;
+    }
+
+    .Header-logo {
+        
+        max-width: 14rem;
+        
+    
     }
 
 
