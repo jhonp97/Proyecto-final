@@ -10,15 +10,15 @@
 const main = document.getElementById("main");
 const grid = document.querySelector(".Main-grid");
 const gridImg = document.querySelectorAll(".Main-grid--img");
-const lightbox =document.getElementById("lightbox");
+const lightbox = document.getElementById("lightbox");
 const btnClose = document.querySelector(".Lightbox-close");
 const imgGrande = document.getElementById("imagenGrande");
 const lightboxTitle = document.querySelector(".Lightbox-title");
 const lightboxText = document.querySelector(".Lightbox-text");
 
-gridImg.forEach((img, i) =>{
-    img.addEventListener("click", ()=>{
-        gridImg.forEach(imagen => {imagen.classList.remove("active")}) // quito la clase
+gridImg.forEach((img, i) => {
+    img.addEventListener("click", () => {
+        gridImg.forEach(imagen => { imagen.classList.remove("active") }) // quito la clase
         img.classList.add("active"); // le agrego la clase a la imagen que se hizo el click
         lightbox.classList.add("openLightbox"); // se le agrega la clase nueva
         imgGrande.src = img.src; // ponemos la imagen clicada en la grande
@@ -26,17 +26,17 @@ gridImg.forEach((img, i) =>{
         lightboxTitle.textContent = img.alt; // el titulo será el alt de la imagen
         // console.log(img.getAttribute("data-description")); 
         lightboxText.textContent = img.getAttribute("data-description"); // el texto será el data-description de la imagen
-        
-        if(document.body.clientWidth < 768){ // mientras sea menor a 768px aplicp el filtro
+
+        if (document.body.clientWidth < 768) { // mientras sea menor a 768px aplicp el filtro
             grid.style.filter = "blur(5px)";
-            main.style.background= "rgba(107, 107, 107, 0.5)"
-            
+            main.style.background = "rgba(107, 107, 107, 0.5)"
+
         }
     })
 })
 
-btnClose.addEventListener("click", ()=>{ // se cierra el lightbox y vuelven los estilos originales
+btnClose.addEventListener("click", () => { // se cierra el lightbox y vuelven los estilos originales
     lightbox.classList.remove("openLightbox");
     grid.style.filter = "none";
-    main.style.background= "none"
+    main.style.background = "none"
 })
